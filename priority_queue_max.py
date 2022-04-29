@@ -24,6 +24,7 @@ def increase_heap_key(heap, i, key):
         i = heap_max.parent(i)
     return heap
 
+""" insert a key into the heap """
 def insert_into_heap(A, key):
     length = len(A) + 1
     A.append(-float('inf'))

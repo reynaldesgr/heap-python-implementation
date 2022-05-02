@@ -15,8 +15,8 @@ def extract_min_from_heap(heap, length):
     return heap, max
 
 """ increase the key at index i """
-def increase_heap_key(heap, i, key):
-    if key < heap[i]:
+def decrease_heap_key(heap, i, key):
+    if key > heap[i]:
         exit()
     heap[i] = key
     while i >= 0 and heap[heap_min.parent(i)] > heap[i]:
